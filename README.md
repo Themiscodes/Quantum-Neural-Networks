@@ -6,7 +6,7 @@ By delving into the design considerations and experimental setups in detail, thi
 
 ## Overview
 
-![vqc4](https://github.com/Themiscodes/Quantum-Neural-Networks/assets/73662635/8d97619a-4d0c-4513-9e6c-76b5181b93a5)
+![VQCa](https://github.com/Themiscodes/Quantum-Neural-Networks/assets/73662635/51e23d1a-1a1c-4be1-a62a-ff1009fadf09)
 
 Parameterized quantum circuits encode input data into quantum states using a feature map, followed by a variational layer with adjustable parameter weights. These parameters are iteratively adjusted using classical optimization methods to minimize a predefined objective function.
 
@@ -20,7 +20,7 @@ In the kernel-based method, a quantum device is used to encode the features of t
 
 The Quantum Neural Network (QNN) architecture explored in this research comprises stacked layers of Parameterized Quantum Circuits (PQCs), which are analogous to classical perceptrons. This approach is inspired by the paper "Data re-uploading for a universal quantum classifier" [^2].
 
-![qnn](https://github.com/Themiscodes/Quantum-Neural-Networks/assets/73662635/29e4271d-a84c-4c6a-b64f-b41d5ef455fe)
+![QNNa](https://github.com/Themiscodes/Quantum-Neural-Networks/assets/73662635/4140783c-7be7-444d-bf06-d8f013fea851)
 
 The QNN class, implemented as a PyTorch module, allows for the specification of the number of layers and features during initialization. This design choice enables a modular framework that can be readily adjusted and modified during hyperparameter tuning to align with the underlying geometry of the problem. The implementaion can be found in the [quantum\_neural\_network](quantum_neural_network/) directory.
 
