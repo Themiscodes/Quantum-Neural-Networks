@@ -1,10 +1,12 @@
 # Quantum Neural Networks with Qutrits
 
-This repository contains the code implementation for my thesis titled "Quantum Neural Networks with Qutrits" [^1], which investigates the potential of three-level quantum systems in quantum machine learning. Qutrits offer an expanded state space that enables richer data representation, capturing intricate patterns and relationships. This work introduces the Gell-Mann feature map, which encodes information within an 8-dimensional space, for classification tasks.
+This repository presents the code implementation for my thesis, "Quantum Neural Networks with Qutrits" [^1], exploring the applicability of three-level quantum systems in quantum machine learning. Qutrits' expanded state space enhances data representation, effectively capturing intricate patterns and relationships. The work introduces the Gell-Mann feature map, encoding information within an 8-dimensional space, specifically designed for classification tasks. 
 
-## Implementation
+By delving into the design considerations and experimental setups in detail, this research aims to contribute to the broader understanding of the capabilities and limitations of qutrit-based systems in the context of quantum machine learning, contributing to the advancement of quantum computing and its applications in practical domains.
 
-![VQCa](https://github.com/Themiscodes/Quantum-Neural-Networks/assets/73662635/51e23d1a-1a1c-4be1-a62a-ff1009fadf09)
+## Overview
+
+![vqc4](https://github.com/Themiscodes/Quantum-Neural-Networks/assets/73662635/8d97619a-4d0c-4513-9e6c-76b5181b93a5)
 
 Parameterized quantum circuits encode input data into quantum states using a feature map, followed by a variational layer with adjustable parameter weights. These parameters are iteratively adjusted using classical optimization methods to minimize a predefined objective function.
 
@@ -18,7 +20,7 @@ In the kernel-based method, a quantum device is used to encode the features of t
 
 The Quantum Neural Network (QNN) architecture explored in this research comprises stacked layers of Parameterized Quantum Circuits (PQCs), which are analogous to classical perceptrons. This approach is inspired by the paper "Data re-uploading for a universal quantum classifier" [^2].
 
-![QNNa](https://github.com/Themiscodes/Quantum-Neural-Networks/assets/73662635/4140783c-7be7-444d-bf06-d8f013fea851)
+![qnn](https://github.com/Themiscodes/Quantum-Neural-Networks/assets/73662635/29e4271d-a84c-4c6a-b64f-b41d5ef455fe)
 
 The QNN class, implemented as a PyTorch module, allows for the specification of the number of layers and features during initialization. This design choice enables a modular framework that can be readily adjusted and modified during hyperparameter tuning to align with the underlying geometry of the problem. The implementaion can be found in the [quantum\_neural\_network](quantum_neural_network/) directory.
 
